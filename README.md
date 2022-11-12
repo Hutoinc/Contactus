@@ -1,4 +1,4 @@
 # Contact us
 
 ### Todo(s)
-- [ ] #1
+- [ ] https://github.com/Hutoorg/Contactus/issues/1
