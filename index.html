@@ -9,19 +9,25 @@
 
 <body>
     <div class="container">
-        <form action="https://discord.com/api/webhooks/1046311366908203099/Uxyk_1pBUamgs5IibGCM5VwbGOyRH8lqFQUbJAGsIewAHdv9a2iHQYCoIiJrQDHpGY2E" method="post">
+        <form action="https://formspree.io/f/moqbzkko" method="post">
             <h3>Contact us</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="text" id="phone" placeholder="Phone no." required>
-            <textarea id="message" rows="4" placeholder="Message us"></textarea>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="text" name="Phone" placeholder="Phone no." required>
+            <textarea name="Message" rows="4" placeholder="Message us"></textarea>
+
             <button type="submit" onclick="sub()">Submit</button>
+
+            <p id="getSSID"></p>
         </form>
     </div>
 
     <script>
+        const uid = Math.floor(Math.random() * 999999999999) + 1;
+        sessionStorage.setItem("User SSD", uid);
+
         function sub() {
-            alert("Sent!")
+            document.getElementById("getSSID").innerHTML = "Your Session ID is: " + sessionStorage.getItem("User SSD")
         }
     </script>
 </body>
