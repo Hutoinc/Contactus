@@ -2,7 +2,10 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Contact us</title>
+    <meta name="description" content="Contact Hutoorg's Support team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="asset/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,23 +16,12 @@
             <h3>Contact us</h3>
             <input type="text" name="Name" placeholder="Your Name" required>
             <input type="email" name="Email" placeholder="Email" required>
-            <input type="text" name="Phone" placeholder="Phone no." required>
+            <input type="text" name="Phone" placeholder="Phone no.">
             <textarea name="Message" rows="4" placeholder="Message us"></textarea>
 
             <button type="submit" onclick="sub()">Submit</button>
-
-            <p id="getSSID"></p>
         </form>
     </div>
-
-    <script>
-        const uid = Math.floor(Math.random() * 999999999999) + 1;
-        sessionStorage.setItem("User SSD", uid);
-
-        function sub() {
-            document.getElementById("getSSID").innerHTML = "Your Session ID is: " + sessionStorage.getItem("User SSD")
-        }
-    </script>
 </body>
 
 </html>
