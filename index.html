@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Contact us</title>
-    <meta name="description" content="Contact Hutoorg's Support team">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="asset/favicon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta name="description" content="Contact Hutoorg's Support team" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="asset/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <form action="https://getform.io/f/de0f65f2-85f6-428f-83f8-46b6febab036" method="post">
-            <h3>Contact us</h3>
-            <input type="text" name="Name" placeholder="Your Name" required>
-            <input type="email" name="Email" placeholder="Email" required>
-            <input type="text" name="Phone" placeholder="Phone no.">
-            <textarea name="Message" rows="4" placeholder="Message us"></textarea>
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAAACPGt5aH9ThMoGi"></div>
-            <button type="submit" onclick="sub()">Submit</button>
-        </form>
+      <form
+        action="https://getform.io/f/de0f65f2-85f6-428f-83f8-46b6febab036"
+        method="post"
+      >
+        <h3>Contact us</h3>
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="Name"
+          id="name"
+          placeholder="Your Name"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <label for="phone">Phone no.</label>
+        <input type="text" name="Phone" id="phone" placeholder="Phone no." />
+        <label for="message">Name</label>
+        <textarea
+          name="Message"
+          id="message"
+          rows="4"
+          placeholder="Message us"
+        ></textarea>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAACPGt5aH9ThMoGi"></div>
+        <button type="submit" onclick="sub()">Submit</button>
+      </form>
     </div>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</body>
-
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      async
+      defer
+    ></script>
+  </body>
 </html>
